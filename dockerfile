@@ -10,4 +10,6 @@ EXPOSE 8000
 
 RUN conda init bash
 
-CMD ["./start.sh"]
+RUN chmod +x ./start.sh
+
+ENTRYPOINT ["./start.sh"]
